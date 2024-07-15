@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* CSS Document */
+
+.gach-chan {
+	border-bottom: 2px solid darkred
+}
+.text-do {
+	color: red
+}
+.vien{
+	border: 1px solid darkred; border-radius: 5px; padding: 15px; position: relative; overflow:hidden ;
+		
+}
+.icon{
+	width: 70%;
+	height: 45px;
+	position: absolute;
+	left: 15%;
+	top: 40%;
+	display: flex;
+	justify-content: space-between;
+	transition: all 1s;
+	transform: scale(0)
+}
+.icon a {
+	height: 45px;
+	width: 45px;
+	background-color: darkred;
+	color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.vien:hover .icon{
+	top: 40%;
+	transform: scale(1)
+}
+/*xong phan New Arrival*/
+#feature {
+	width: 100%;
+	min-height: 600px;
+	background-image:url("../images/bg2.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom
+}
+.pt-30{
+	padding-top: 30px
+}
+.vien-trang{
+	width: 100%;
+	border: 1px solid white;
+	text-align: center;
+	padding: 20px;
+	color: darkred;
+}
+.vien-trang a:hover{
+	color: white
+}
+.vien-trang a{
+	text-decoration: none;
+	color: darkred;
+	cursor: pointer
+}
+#feature h1{
+	padding-top: 15px
+}
+/*xong phan feature*/
+#contact{
+	width: 100%;
+	min-height: 600px;
+	background-image: url("../images/Shop-Banner2.png"); background-repeat: no-repeat; background-size: cover;
+	background-position: center
+}
+.form-control{
+	padding: 8px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.shadow{
+	border: 1px solid #D0D0D0;
+	padding: 30PX;
+	box-shadow: 5px 5px 5px gray
+}
+.logo {
+    width: 150px; /* Đặt kích thước logo theo nhu cầu của bạn */
+    height: auto; /* Giữ tỉ lệ hình ảnh gốc */
+	padding-top: 25px;
+	padding-left: 15px
+}
+.menu{
+	padding-top: 25px;
+	padding-right: 20px
+}
+.menu ul li a{
+	padding: 10px 20px; text-decoration: none; font-size: 17px; text-transform: uppercase; color: black
+}
+.menu ul li a:hover{
+	background-color: rgba(255); color: #F5EC69
+}
+.menu ul{
+	margin: 0; padding: 0; list-style: none; display: flex
+}
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+	margin: 10px
+		
+}
+
+.search-bar {
+    display: none; /* Ban đầu ẩn thanh tìm kiếm */
+    position: absolute;
+    left: 40px; /* Điều chỉnh vị trí thanh tìm kiếm so với icon */
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.persona-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+	margin:  10px
+}
+
+.persona-info {
+    display: none; /* Ban đầu ẩn popup thông tin cá nhân */
+    position: absolute;
+    top: 40px; /* Điều chỉnh vị trí popup so với icon */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.persona-info p {
+    margin: 10px;
+}
+
+.persona-info button {
+    margin-right: 10px;
+}
+.shop-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+	margin: 10px
+}
+
+.shop-info {
+    display: none; /* Ban đầu ẩn popup trang mua sắm */
+    position: absolute;
+    top: 40px; /* Điều chỉnh vị trí popup so với icon */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+	cursor: pointer
+}
+
+.shop-info h2 {
+    margin: 0 0 10px 0;
+}
+
+.shop-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.shop-info li {
+    margin-bottom: 10px;
+}
+
+.shop-info button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.shop-info ul li a:hover{
+	background-color: rgba(255); color: #F5EC69
+}
+#slider .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+
+#slider .owl-nav [class*='owl-'] {
+
+	font-size:60px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #fff
+
+}
+
+
+
+#slider .owl-nav .owl-next{ position:absolute; right:5%;}
+
+#slider .owl-nav .owl-prev{ position:absolute; left:5%;}
+
+#slider .owl-nav [class*='owl-']:hover {
+
+      background:none;border: none;
+
+      color:yellow;
+
+      text-decoration: none; }
+#slider .owl-dots{ position:absolute; bottom: 10px; left:45%;}
+
+#slider .owl-dots .owl-dot span {
+
+      width: 12px;
+
+      height: 12px; 	
+
+}
+.banner{
+	width: 100%;
+	min-height: 600px;
+	padding-top: 15px
+	
+}
+/*xongtrangchu*/
